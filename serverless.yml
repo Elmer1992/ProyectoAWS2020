@@ -26,6 +26,7 @@ resources:
       Type: AWS::S3::Bucket
       Properties:
         BucketName: datakeeper
+        ValidateFunc: validation.NoZeroValues
         AccessControl: PublicRead
         CorsConfiguration:
           CorsRules:
@@ -103,3 +104,6 @@ functions:
           path: getcontract
           method: get
           cors: true
+          
+          
+          
