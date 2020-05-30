@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Archivos S3</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+        
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+        
+        .aligner {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        
+        #drop {
+            height: 200px;
+            width: 200px;
+            border-radius: 100px;
+            color: #fff;
+            background-color: #baf;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg" style="background-color: #17a2b8;">
+        <a class="navbar-brand" href="#">
+            <h3 style="color: white;">Subir Datos</h3>
+        </a>
+    </nav>
+
+    <ul>
+        <li><a href="./index.html">Drop File</a></li>
+        <li><a href="./tabla.html">Tabla</a></li>
+    </ul>
+
+    <div class="aligner">
+        <div id="drop">Drop files here.</div>
+        <div id="list">
+            <h1>Uploaded Files:</h1>
+        </div>
+    </div>
+
+    <script src="./src/js/textract.js"></script>
+
+</body>
+
+</html>
