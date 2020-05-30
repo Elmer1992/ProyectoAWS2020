@@ -6,7 +6,7 @@ phases:
       - echo Logging in to Amazon ECR...
       - aws --version
       - $(aws ecr get-login --region $AWS_DEFAULT_REGION --no-include-email)
-     - REPOSITORY_URI=004828237786.dkr.ecr.us-east-1.amazonaws.com/isproject
+     - REPOSITORY_URI=004828237786.dkr.ecr.us-east-1.amazonaws.com/githubpipelineaws
       - COMMIT_HASH=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)
       - IMAGE_TAG=build-$(echo $CODE_BUILD_ID | awk -F":" '{print $2}')
   build:
